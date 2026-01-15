@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "dca90749-5b99-4675-9765-9be179d0ffd4",
+		"name": "Test - Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26199994",
+		"_collection_link": "https://warped-robot-30534.postman.co/workspace/Team-Workspace~ff9f9a89-708e-471e-8963-ac0804b6492f/collection/26199994-dca90749-5b99-4675-9765-9be179d0ffd4?action=share&source=collection_link&creator=26199994"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "External API",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/clients/external"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Client",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"John Updated\",\n  \"email\": \"john.updated@example.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/clients/5"
+					},
+					"response": []
+				},
+				{
+					"name": "Specific Page",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Client",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Client",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/clients"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
